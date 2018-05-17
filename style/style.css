@@ -424,6 +424,11 @@ html, body{
     padding: 5%;
 }
 
+#contactez-moi{
+    font-family: "ssp-regular";
+    font-size: 3.5vw;
+}
+
 
 #inputs>input{
     width: 350px;
