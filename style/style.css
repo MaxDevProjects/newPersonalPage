@@ -361,7 +361,7 @@ html, body{
     flex-direction: row;
     justify-content: center;
     margin: auto;
-    width: 98%;
+    width: 95%;
     justify-content: space-around;
     /* flex-wrap: wrap; */
     /* gap: 32px; */
@@ -373,11 +373,6 @@ html, body{
     margin: auto;
     margin: 32px 12px;
     width: 100%;
-    min-width: 300px;
-    max-width: 450px;
-    height: 600px;
-    min-height: 450px;
-    max-height: 600px;
     background-color: rgba(38, 50, 56, 50);
     border: 1px solid #263238;
     border-radius: 66px;
@@ -392,11 +387,7 @@ html, body{
     background-size: 100%; */
     border-radius: 66px;
     width: 100%;
-    min-width: 300px;
-    max-width: 450px;
-    height: 600px;
-    min-height: 450px;
-    max-height: 600px;
+    min-height: 300px;
     background-color: rgba(38, 50, 56);
     border: 1px solid #263238;
     box-shadow: 3px 3px 6px rgba(38, 50, 56, 50);
@@ -526,14 +517,7 @@ html, body{
 }
 
 #folio>div{
-    width: 25%;
-    height: 25%;
-}
-
-
-#img-maquette{
-    width: 100%;
-    height: 100%;
+    width: 45%;    
 }
 
 #folio>#folio-case{
@@ -761,23 +745,21 @@ html, body{
 }
 
 #folio>div{
-    width: 25%;
-    height: 25%;
+    width: 45%;    
 }
 
-.folio-frame, #img-maquette{
+/* .folio-frame, #img-maquette{
     opacity: 0.5;
 }
 
 .folio-frame:hover, #img-maquette:hover{
     transform: none;
-}
+} */
 
 
 
 #img-maquette{
-    width: 50%;
-    height: 50%;
+    width: 100%;
 }
 
 #folio>#folio-case{
@@ -982,14 +964,11 @@ html, body{
 }
 
 #folio>div{
-    width: 100px;
-    height: 100px;
+    width: 100%;    
 }
 
-
 #img-maquette{
-    width: 100px;
-    height: 100px;
+    width: 100%;
 }
 
 #folio>#folio-case{
@@ -1141,7 +1120,6 @@ body, html, .global{
 .logo-skills>.img-fluid{
     margin-top: 10%;
     width: 100%;
-    height: 15%;
     margin: auto;
 
 }
@@ -1185,7 +1163,7 @@ body, html, .global{
 #folio{
     /* display: flex;
     flex-wrap: wrap; */
-    width: 50vw;
+    width: 95%;
 }
 
 /* #folio>div{
@@ -1195,7 +1173,7 @@ body, html, .global{
 
 
  #img-maquette{
-    width: 50vw;
+    width: 100%;
     /* height: 100px; */
 } 
 
