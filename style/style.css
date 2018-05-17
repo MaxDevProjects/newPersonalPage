@@ -583,6 +583,17 @@ html, body{
 
 /* ***************** */
 
+@media screen and (max-height:490px){
+
+    #name{
+        margin-left: 15vw;
+        margin-top: 5vh;
+        margin-right: 25vw;
+        font-size: 18vh;
+    }
+
+}
+
 /* ******768px****** */
 @media screen and (max-width:768px){
 
@@ -621,9 +632,10 @@ html, body{
 
 
 #name{
-    margin-left: 8vw;
+    margin-left: 15vw;
     margin-top: 5vh;
     margin-right: 38vw;
+    font-size: 10vw;
     /* -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: #263238; */
 }
@@ -663,7 +675,7 @@ html, body{
 .description{
     margin: auto;
     font-family: "ssp-regular";
-    font-size: 1rem;
+    font-size: 2vw;
     /* padding-right: 10%; */
 }
 
@@ -806,6 +818,35 @@ html, body{
 
 }
 
+@media screen and (max-width:900px) and (max-height:600px){
+    .navbox{
+        visibility: hidden;        
+        display: none;
+    }
+}
+
+
+}
+
+
+/* *****390height***** */
+@media screen and (max-height:390px){
+     .navbox{
+        visibility: hidden;
+        display: none;
+    }
+#name{
+    margin-left: 15vw;
+    margin-top: 4%;
+    margin-right: 30%;
+    font-size: 18vh;
+}
+
+.ruban{
+    right: 10vw;
+    bottom: 30vh;
+}
+}
 
 /* ******600px****** */
 @media screen and (max-width: 600px){
@@ -821,7 +862,7 @@ html, body{
 
 .img{
     display: flex;
-    height: 80%;
+    height: 75%;
 }
 
 
@@ -830,7 +871,7 @@ html, body{
     margin-top: 4%;
     margin-right: 30%;
     font-size: 11vw;
-    width: 100%;
+    width: 80%;
 }
 
 /* ****** about ****** */
@@ -1212,4 +1253,16 @@ body, html, .global{
 #foot-link{
     font-size: 0.8rem;
 }
+}
+
+@media screen and (max-width:600px) and (max-height:300px){
+    .navbox{
+        visibility: hidden;        
+        display: none;
+    }
+    #name{
+    margin-left: 15vw;
+    margin-top: 4%;
+    margin-right: 30%;
+    font-size: 15vh;
 }
