@@ -1,3 +1,0 @@
-RewriteEngine on
-RewriteCond %{HTTP_HOST} ^maxime-martin.fr$
-RewriteRule ^(.*) http://www.maxime-martin/$1 [QSA,L,R=301]
