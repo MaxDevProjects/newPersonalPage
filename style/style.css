@@ -538,7 +538,7 @@ html, body{
 
 #asterisk{
     display: flex;
-    justify-content: flex-start, center;
+    justify-content: flex-start;
     justify-items: center;
     position: relative;
     margin:auto;
