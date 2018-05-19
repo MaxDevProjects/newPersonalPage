@@ -334,6 +334,21 @@ html, body{
     /* opacity: .5; */
 }
 
+.certif{
+    color: #008F85;
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: #263238;
+    transition: 0.5s;
+}
+
+.certif:hover{
+    color: #263238;
+    text-decoration-style: wavy;
+    text-decoration-color: #008F85;
+    transition: 0.5s;
+    
+}
 
 #fram{
     padding: 0 2%;; 
@@ -519,6 +534,14 @@ html, body{
     text-decoration-line: underline;
     text-decoration-color: #00695C;
     text-decoration-style: wavy;
+}
+
+#asterisk{
+    display: flex;
+    justify-content: flex-start, center;
+    justify-items: center;
+    position: relative;
+    margin:auto;
 }
 
 /* ******992px****** */
@@ -834,8 +857,6 @@ html, body{
     }
 }
 
-
-}
 
 
 /* *****390height***** */
