@@ -156,13 +156,16 @@ html, body{
 
 #name{
     display: flex;
-    position: absolute;
-    margin-left: 17vw;
-    margin-top: 5vh;
-    margin-right: 43vw;
     font-family: "lora-regular";
     font-size: 5.5rem;
     color: #263238;
+
+    position: relative;
+    justify-items: center;
+    justify-content: center;
+    width: 50%;
+    margin-left: 18%;
+    text-align: left;
     /* -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: #263238; */
 }
@@ -273,7 +276,7 @@ html, body{
 #line-skills{
     display:block;
     margin-top: 6px;
-    width: 25%;
+    width: 330px;
     margin-left: 10px;
 }
 
@@ -284,24 +287,26 @@ html, body{
     box-shadow: 6px 0 6px #263238;
 }
 
-.logo-skills{
+/* .logo-skills{
     display: flex;
     justify-content: space-between;
     justify-items: center;
     width: 100%;
-}
+} */
 
-.logo-skills>img{
-    width: 25%;
-    height: 25%;
-}
+/* .logo-skills>img{
+    margin: auto;
+    width: 15%;
+    height: 15%;
+    
+} */
 
 .grid-container{
     display: flex;
     /* grid-template-rows: repeat( 200px);
     grid-auto-flow: column; */
     justify-content: space-between;
-    margin-top: -5%;
+    margin: auto;
     text-align: center;
     width: 100%;
 }
@@ -311,20 +316,35 @@ html, body{
     gap: 10px;
     border: 3px solid;
     background-color: rgba(233, 232, 232, 0.664);
+    z-index: 1;
+    opacity: 1;
 }
+
 
 #dev{
     padding: 0 2%;; 
     border-color: #67fff8;
     border-radius: 6px;
     box-shadow: 0 0 12px #67fff8;
+    background-image: url(/assets/img/devLogocopie.png);
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-position: center;
+    background-size: 50%;
+    /* opacity: .5; */
 }
+
 
 #fram{
     padding: 0 2%;; 
     border-color: #ff6e67;
     border-radius: 6px;
     box-shadow: 0 0 12px #ff6e67;
+    background-image: url(/assets/img/frameworksLogocopie.png);
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-position: center;
+    background-size: 50%;
 }
 
 #graph{
@@ -332,6 +352,11 @@ html, body{
     border-color: #7143e8;
     border-radius: 6px;
     box-shadow: 0 0 12px #7143e8;
+    background-image: url(/assets/img/graphLogocopie.png);
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-position: center;
+    background-size: 50%;
 }
 
 .grid-container>div>h3{
@@ -341,15 +366,18 @@ html, body{
     text-decoration-color: rgb(49, 49, 49);
     text-decoration-style: dotted;
     text-decoration-line: underline;
+    /* opacity: 1; */
 }
 
 .grid-container>div>p{
     font-family: 'ssp-regular';
     font-size: 1.1rem;
     color: #263238;
+    text-shadow: 1px 1px 10px #2632387e;
+    /* opacity: 1; */
 }
 
-
+ 
 
 
 
@@ -497,12 +525,16 @@ html, body{
 
 @media screen and (max-width: 992px){
 
-#name{
-    margin-left: 8vw;
-    margin-top: 3vh;
-    margin-right: 38vw;
+/* #name{
+    position: relative;
+    justify-items: center;
+    justify-content: center;
+    font-size: 11vw;
+    width: 50%;
+    margin: auto;
+    text-align: left;
 
-}
+} */
 
 #profession{
     bottom: 2vh;
@@ -557,8 +589,8 @@ html, body{
 }
 
 #line-skills{
-    width: 40%;
-    margin-left: 5%;
+    width: 320px;
+    /* margin-left: 5%; */
 }
 
 #line-skills>p{
@@ -675,32 +707,13 @@ html, body{
 
 
 #line-skills{
-    width: 150px;
-    margin-left: 1%;
+    width: 160px;
+    /* margin-left: 1%; */
 }
 
 #skills-section{
     display: grid;
     grid-template-columns: auto auto;
-}
-
-
-.logo-skills{
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 15%;
-}
-
-.logo-skills>.img-fluid{
-    display: flex;
-    /* justify-content: space-between; */
-    /* justify-content: center;
-    justify-items: center; */
-    width: 100%;
-    margin: auto;
-    padding-bottom: 15%;
-    
-
 }
 
 .grid-container{
@@ -712,6 +725,7 @@ html, body{
 
 .grid-container>div>h3{
     font-size: 1.1rem;
+    margin: 6px;
 }
 
 .grid-container>div>p{
@@ -730,15 +744,23 @@ html, body{
 }
 
 #dev{
-    padding: 0; 
+    width: 80%;
+    padding: 0;
+    margin: auto;
 }
 
 #fram{
+    width: 80%;
     padding: 0;
+    margin: auto;
+    
 }
 
 #graph{
+    width: 80%;
     padding: 0;
+    margin: auto;
+    
 }
 
 
@@ -854,11 +876,17 @@ html, body{
 
 
 #name{
-    margin-left: 8%;
+    /* margin-left: 8%;
     margin-top: 4%;
-    margin-right: 30%;
+    margin-right: 30vw; */
+    position: relative;
+    justify-items: center;
+    justify-content: center;
     font-size: 11vw;
-    width: 80%;
+    width: 65%;
+    margin: auto;
+    text-align: left;
+    
 }
 
 /* ****** about ****** */
@@ -1046,9 +1074,13 @@ body, html, .global{
 
 
 #name{
-    width: 75%;
-    margin-top: 8vh;
-    font-size: 10vw;
+    position: relative;
+    justify-items: center;
+    justify-content: center;
+    font-size: 11vw;
+    width: 65vw;
+    margin: auto;
+    text-align: left;
 }
 
 #profession{
