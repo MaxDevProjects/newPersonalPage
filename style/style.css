@@ -94,6 +94,13 @@ html, body{
     width: 39px;
 }
 
+li>iframe {
+    position: absolute;
+    float: left;
+    transform: rotate(90deg);
+    transform-origin: left;
+}
+
 .ruban{
     display: flex;
     flex:auto;
